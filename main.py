@@ -5,7 +5,7 @@ clock = pygame.time.Clock()
 
 display = pygame.display.set_mode((650, 721))
 pygame.display.set_caption("Okurmen_Team_GAME!")
-icon = pygame.image.load("game/icon.jpg")
+icon = pygame.image.load("game/icon2.png")
 pygame.display.set_icon(icon)
 
 # фон
@@ -15,6 +15,9 @@ background = pygame.image.load('game/game fon 1.jpg')
 walk = [
     pygame.image.load('game/Pac_Man.1.png').convert_alpha()
 ]
+
+
+
 
 player_anim_count = 0
 
@@ -52,6 +55,7 @@ while running:
         player_y -= player_speed
     if keys[pygame.K_DOWN] and player_y + player_speed < 721 - walk[0].get_height():
         player_y += player_speed
+   
 
 
     pygame.display.update()
