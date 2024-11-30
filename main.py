@@ -5,11 +5,7 @@ clock = pygame.time.Clock()
 
 display = pygame.display.set_mode((650, 721))
 pygame.display.set_caption("Okurmen_Team_GAME!")
-icon = pygame.image.load("game/icon2.png")
-pygame.display.set_icon(icon)
 
-# фон
-background = pygame.image.load('game/game fon 1.jpg')
 
 # игрок
 walk = [
@@ -36,7 +32,7 @@ bg_sound.play()
 
 running = True
 while running:
-    display.blit(background, (0, 0))
+   
     display.blit(walk[player_anim_count], (player_x, player_y))
 
     pygame.display.update()
